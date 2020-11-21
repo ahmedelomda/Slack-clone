@@ -1,0 +1,10 @@
+body {
+  --slack-color: #3f0f40;
+  /* overflow: hidden; */
+}
+
+.app-body {
+  display: flex;
+  height: 150vh;     /* 	Relative to 100% of the height of the viewport */
+} 
+
