@@ -14,11 +14,11 @@ function ChatInput({ channelName, channelId }) {
 
         if (channelId) {
             db.collection('rooms').doc(channelId).collection('messages').add({
-                    message: input,
-                    timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-                    user: user.displayName,
-                    userImage: user.photoURL,
-                });  
+                message: input,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                user: user.displayName,
+                userImage: user.photoURL,
+            });  
         }
     };
 
